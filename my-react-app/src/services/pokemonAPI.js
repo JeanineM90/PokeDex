@@ -14,9 +14,18 @@ const pokemonToDisplay = new Pokemon({
    height: data.height,
    weight: data.weight,
    number: data.id,
+   hp: data.stats[0].base_stat,
+   attack: data.stats[1].base_stat,
+   defence: data.stats[2].base_stat,
+   special: data.stats[3].base_stat
 });
 return pokemonToDisplay
 } 
+
+async fetchPokemonSpecies(name) {
+   const reponse = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemon-name}`)
+   //need to set up the pokemon description here
+}
 
 }
 

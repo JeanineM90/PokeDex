@@ -30,7 +30,11 @@ export function PokemonApiPage() {
             <div class= "grid-item"><h2>{pokemon ? `type: ` + pokemon.type : ''}</h2></div> 
             <div class= "grid-item"><h2>{pokemon ? `height: ` + pokemon.height : ''}</h2></div> 
             <div class= "grid-item"><h2>{pokemon ? `weight: ` + pokemon.weight : ''}</h2></div> 
-            <div class= "grid-item"><h2>{pokemon ? `number: ` + pokemon.number : ''}</h2></div>   
+            <div class= "grid-item"><h2>{pokemon ? `number: ` + pokemon.number : ''}</h2></div> 
+            <div class= "grid-item"><h2>{pokemon ? `hp: ` + pokemon.hp : ''}</h2></div> 
+            <div class= "grid-item"><h2>{pokemon ? `attack: ` + pokemon.attack : ''}</h2></div> 
+            <div class= "grid-item"><h2>{pokemon ? `defence: ` + pokemon.defence : ''}</h2></div> 
+            <div class= "grid-item"><h2>{pokemon ? `special: ` + pokemon.special : ''}</h2></div> 
             </div>      
         </div>
     );

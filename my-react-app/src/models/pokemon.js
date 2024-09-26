@@ -4,8 +4,17 @@ export class Pokemon {
     height;
     weight;
     number;
-    //image 
-    //description
+    //image;
+    hp;
+    //level;
+    //type 2;
+    //OT original trainer - can't find in API though?
+    attack;
+    defence;
+    speed;
+    special;
+    //IDno. 
+
 
     constructor(data){
         this.name=data.name;
@@ -13,5 +22,14 @@ export class Pokemon {
         this.height=data.height;
         this.weight=data.weight;
         this.number=data.number;
+        this.attack=data.attack;
+        this.defence=data.defence;
+        this.speed=data.speed;
+        this.special=data.special;
+        this.hp=data.hp;
     }
+}
+
+export class PokemonSpecies {
+    //description;
 }
